@@ -9,13 +9,13 @@ public:
     bool isValid(string s) {
         stack<char> newStack;
 
-        if (s.empty()) return false;  // optional, depending on spec
-
+        if (s.empty()) return false; 
+        
         for (char character : s) {
             if (character == '(' || character == '{' || character == '[') {
                 newStack.push(character);
             } else {
-                if (newStack.empty()) return false;  // <-- fix
+                if (newStack.empty()) return false; 
 
                 char top = newStack.top();
                 newStack.pop();
