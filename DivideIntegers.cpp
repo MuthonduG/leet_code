@@ -42,4 +42,3 @@ public:
         return (int)quotient;
     }
 };
-
